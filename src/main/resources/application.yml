@@ -43,7 +43,7 @@ spring:
           uri: http://delivery:8080
           predicates:
             - Path=/cancellations/**
-        - id: delivery
+        - id: cancellations
           uri: http://delivery:8080
           predicates:
             - Path=/cancellations/**
