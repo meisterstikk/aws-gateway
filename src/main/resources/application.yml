@@ -42,7 +42,11 @@ spring:
         - id: delivery
           uri: http://delivery:8080
           predicates:
-            - Path=/deliveries/**,/cancellations/**
+            - Path=/cancellations/**
+        - id: delivery
+          uri: http://delivery:8080
+          predicates:
+            - Path=/cancellations/**
       globalcors:
         corsConfigurations:
           '[/**]':
